@@ -20,13 +20,13 @@ public class EmployeeServiceTest {
 
     @InjectMocks
     EmployeeService employeeService ;
-
+/*Test case for getAllEmployees*/
     @Test
     void getAllEmployeesShouldGetSuccessfully(){
         employeeService.getAllEmployees();
     }
 
-
+/*Test case for saveEmployee method */
     @Test
     void saveEmployeeShouldSaveSuccessfully(){
         Employee emp=new Employee();
@@ -45,5 +45,4 @@ public class EmployeeServiceTest {
         assertEquals(emp.getId(),empAdded.getId());
         System.out.println("test passes successfully");
     }
-
 }
